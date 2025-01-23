@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cities</title>
+    <link rel="stylesheet" href="css"><style>
+        h1{
+            
+            text-align:center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/background.jpg'); /* Fond beige pour toute la page */
+            display: flex;
+            flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+            gap: 20px; /* Espacement entre les cadres */
+            justify-content: center; /* Centre les images */
+            margin: 0;
+            padding: 90px;
+        }
+        nav {
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .cadre {
+            border: 10px solid black; /* Bordure des cadres */
+            border-radius: 10px; /* Coins arrondis */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+            overflow: hidden; /* Cache le contenu débordant */
+            width: 300px; /* Largeur fixe */
+            height: 200px; /* Hauteur fixe */
+            display: flex;
+            align-items: center; /* Centre l'image verticalement */
+            justify-content: center; /* Centre l'image horizontalement */
+        }
+        .cadre img {
+            width: 300px; /* Image adaptée à la largeur */
+            height: 200px; /* Garde les proportions */
+        }
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            margin:0;padding:0;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1>ACTIVITIES</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Golf</a></li>
+                    <li><a href="#">Go-karting</a></li>
+                    <li><a href="#">Skating</a></li>
+                    <li><a href="#">Playground</a></li>
+                </ul>
+            </nav>
+        </header>
+      
+    <div class="cadre">
+        <img src="images/golf.jpg" alt="golf">
+    </div>
+   
+    <div class="cadre">
+        <img src="images/karting.jpg"alt="karting">
+    </div>
+    
+    <div class="cadre">
+        <img src="images/sindibad.jpg"alt="parc">
+    </div>
+    
+    <div class="cadre">
+        <img src="images/patinage.jpg"alt="patinage">
+    </div>
+    
+    
+    
+</body>
+</html>
